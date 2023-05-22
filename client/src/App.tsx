@@ -3,11 +3,13 @@ import "./App.css";
 
 import Home from "./pages/Home.tsx";
 import Second from "./pages/Other.tsx";
+import ErrorPage from "./pages/Error.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/other",
